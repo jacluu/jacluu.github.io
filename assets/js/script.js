@@ -31,8 +31,17 @@ $(document).ready(function(){
 
 	$('.section-bg').each(function() {
 		$(this).waypoint(function() {
-      $(this).animate({right:40, opacity:"show"}, 1000);
+      $(this).animate({right:60, opacity:"show"}, 1000);
 	}, { offset: '70%'});
+	});
+
+
+  	$('.pointer').fadeOut(100);
+
+	$('.pointer').each(function() {
+		$(this).waypoint(function() {
+      $(this).fadeIn(100);
+	}, { offset: '60%'});
 	});
 
 	/* Click Scroll*/
@@ -62,6 +71,11 @@ $(document).ready(function(){
         scrollTop: $("#contact-section").offset().top
     	}, 1500);
 	});
+
+
+	/* Hover */
+
+	
 
 
 });

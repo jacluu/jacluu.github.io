@@ -148,6 +148,25 @@ body {
 
 }
 
+.pointer {
+    position: absolute;
+    top: 200px;
+    left: 560px;
+    height: 3px;
+    width: 80px;
+    background-color: #E3E7E8;
+}
+
+.pointer2 {
+    position: absolute;
+    top: 430px;
+    left: 640px;
+    height: 3px;
+    width: 80px;
+    background-color: #E3E7E8;
+}
+
+
 .box {
     position: absolute;
     top: 50px;
@@ -176,15 +195,14 @@ body {
 .section {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 650px;
     margin: auto;
 
     font-family:'Dosis', sans-serif;
     font-weight: 100;
     color: white;
 
-    background-color:  #f1f2f2;
-    background-image: url("img/gray.jpg");
+    background-image: url("../img/gray.jpg");
     background-repeat: repeat;
 }
 
@@ -192,14 +210,16 @@ body {
     position: absolute;
     top: 250px;
     right: 0px;
-    width: 550px;
-    height: 400px
+    width: 520px;
+    height: 380px
 }
 
 .img img{
     width: 100%;
     height: 100%;
     float: right;
+    border-radius: 5px;
+
 }
 
 .img-overlay {
@@ -248,8 +268,11 @@ body {
 /* COMMUNITY */
 
 #community-section {
-    height: 500px;
-
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    margin: auto;
+    z-index: 3;
 }
 
 #community-title {
@@ -261,53 +284,55 @@ body {
     width: 100%;
 }
 
+
+#community-box {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 600px;
+    margin-left: 90px;
+}
+
+
 #community-text {
     width: 500px;
 }
 
 
-
-#a-box {
-    width: 500px;
-    height: 600px;
-}
-
-.profile {
-    padding-right: 300px;
-    float: left;
-}
-
 .profile img{
-    position: absolute;
     height: 400px;
-    padding: 10px;
+    padding: 3px;
+    margin: auto;
     float: left;
+    border-radius: 5px;
+
 }
 
 
 /* CONTACT */
 
 #contact-section {
-    background: #121212;
+    clear: left;
     width: 100%;
-    height: 300px;
-    overflow: hidden;
-    color: #f1f2f2;
+    height: 350px;
+    z-index: 3;
 }
+
+#contact-title {
+    font-size: 50px;
+    color: #212121;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 120px);
+}
+
+
+#contact-box {
+    width: 100%;
+    height: 600px;
+    margin-left: 90px;
+}
+
 
 #contact-text {
-
-    position: absolute;
-    left: calc(50%-10px);
-    width: 500px;
-
-}
-
-
-
-.hidden{
-     opacity:0;
-}
-.visible{
-     opacity:1;
 }
