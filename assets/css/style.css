@@ -310,6 +310,11 @@ body {
 }
 
 
+.profile img:hover{
+    cursor: pointer; cursor: hand;
+}
+
+
 /* CONTACT */
 
 #contact-section {
@@ -337,3 +342,34 @@ body {
 
 #contact-text {
 }
+
+
+.modal-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.modal-container .modal-overlay {
+    height: 100%;
+    width: 100%;  
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+    position: absolute;
+    height: 600px;
+    background-color: #5485BB;
+    top: calc(50% - 300px);
+    right: calc(50% - 170px);
+    z-index: 100;
+}
+
+/* Question 3 */
+
+
+.modal-content img {
+    height: 600px;
+}
+

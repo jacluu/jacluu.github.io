@@ -74,8 +74,26 @@ $(document).ready(function(){
 
 
 	/* Hover */
-
+	$(".modal-container").hide();
 	
+	$("#p1").click(function() {
+		$("#m-1").fadeIn(200);
+	});
 
+	$("#p2").click(function() {
+		$("#m-2").fadeIn(200);
+	});
+
+	$("#p3").click(function() {
+		$("#m-3").fadeIn(200);
+	});
+
+	$("#p4").click(function() {
+		$("#m-4").fadeIn(200);
+	});
+
+	$(".modal-overlay").click(function() {
+	$(".modal-container").fadeOut(200);
+	})
 
 });
